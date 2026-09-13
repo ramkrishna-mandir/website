@@ -6,69 +6,229 @@
   <title>श्री रामकृष्ण मंदिर, अबगांव खुर्द | Shri Ramkrishna Mandir</title>
   <meta name="description" content="श्री रामकृष्ण मंदिर, अबगांव खुर्द (म.प्र.) - गुरु महाराज अनंत विभूषित श्री रामचंद्र जी महाराज के कृपा पात्र ओम प्रकाश जी वैष्णव (पुजारी) एवं संचालक रिषभ वैष्णव के सान्निध्य में।">
   <meta name="keywords" content="रामकृष्ण मंदिर, अबगांव खुर्द, मंदिर, Ramkrishna Mandir, Abgaon Khurd, Temple, Harda">
-  <meta name="theme-color" content="#800000">
-  <meta name="author" content="Vikram Singh Rajput">
-
-  <!-- TODO: अपनी असली डोमेन डालें जब साइट लाइव हो जाए (README देखें) -->
-  <link rel="canonical" href="https://ramkrishnamandir-abgaon.example.com/">
-
-  <!-- Open Graph / WhatsApp / Facebook preview -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="श्री रामकृष्ण मंदिर, अबगांव खुर्द">
-  <meta property="og:description" content="अबगांव खुर्द, हरदा (म.प्र.) में स्थित श्री रामकृष्ण मंदिर — आरती, दर्शन, धार्मिक कार्यक्रम एवं सेवा की जानकारी।">
-  <meta property="og:image" content="assets/images/mandir-hero.jpg">
-  <meta property="og:url" content="https://ramkrishnamandir-abgaon.example.com/">
-  <meta property="og:locale" content="hi_IN">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="श्री रामकृष्ण मंदिर, अबगांव खुर्द">
-  <meta name="twitter:description" content="आरती, दर्शन, धार्मिक कार्यक्रम एवं मंदिर सेवा की जानकारी।">
-  <meta name="twitter:image" content="assets/images/mandir-hero.jpg">
-
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>">
-
-  <!-- Faster handshake with third-party origins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
   <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Tiro Devanagari Hindi','Poppins',sans-serif; background:#FFF8E7; color:#3a2c1a; line-height:1.7; overflow-x:hidden; }
+    img { max-width:100%; display:block; }
+    a { text-decoration:none; color:inherit; }
+    section { padding:80px 20px; }
+    .container { max-width:1200px; margin:0 auto; }
+    :root { --saffron:#FF9933; --gold:#FFD700; --maroon:#800000; --cream:#FFF8E7; --dark:#3a2c1a; }
 
-  <!-- Structured data for Google (place-of-worship rich results) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HinduTemple",
-    "name": "श्री रामकृष्ण मंदिर, अबगांव खुर्द",
-    "image": "assets/images/mandir-hero.jpg",
-    "telephone": "+919753491127",
-    "email": "ramkrishnamandir.abgaon@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "अबगांव खुर्द",
-      "addressLocality": "हरदा",
-      "addressRegion": "मध्य प्रदेश",
-      "postalCode": "461331",
-      "addressCountry": "IN"
-    },
-    "openingHours": "Mo-Su 06:00-21:00"
-  }
-  </script>
+    .announcement { background:linear-gradient(90deg,var(--maroon),var(--saffron),var(--maroon)); color:#fff; text-align:center; padding:8px 15px; font-size:0.95rem; font-weight:500; animation:glow 3s ease-in-out infinite alternate; }
+    @keyframes glow { from{filter:brightness(1);} to{filter:brightness(1.15);} }
+
+    header { position:sticky; top:0; z-index:1000; background:rgba(255,248,231,0.98); box-shadow:0 2px 20px rgba(128,0,0,0.15); backdrop-filter:blur(10px); }
+    .nav-wrap { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:12px 20px; }
+    .logo { display:flex; align-items:center; gap:10px; font-size:1.3rem; font-weight:700; color:var(--maroon); font-family:'Tiro Devanagari Hindi',serif; }
+    .logo i { font-size:1.8rem; color:var(--saffron); }
+    .nav-links { display:flex; gap:25px; align-items:center; }
+    .nav-links a { font-weight:500; color:var(--dark); position:relative; transition:color 0.3s; }
+    .nav-links a::after { content:''; position:absolute; left:0; bottom:-5px; width:0; height:2px; background:var(--saffron); transition:width 0.3s; }
+    .nav-links a:hover { color:var(--maroon); }
+    .nav-links a:hover::after { width:100%; }
+    .btn-donate { background:linear-gradient(135deg,var(--saffron),var(--gold)); color:#fff !important; padding:10px 20px; border-radius:30px; font-weight:700; box-shadow:0 4px 15px rgba(255,153,51,0.4); transition:transform 0.3s,box-shadow 0.3s; animation:pulse 2s infinite; }
+    .btn-donate:hover { transform:translateY(-3px); box-shadow:0 8px 25px rgba(255,153,51,0.6); }
+    @keyframes pulse { 0%,100%{ box-shadow:0 4px 15px rgba(255,153,51,0.4); } 50%{ box-shadow:0 4px 25px rgba(255,153,51,0.8); } }
+    .menu-toggle { display:none; font-size:1.6rem; color:var(--maroon); cursor:pointer; background:none; border:none; }
+
+    .hero { position:relative; min-height:90vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; background:linear-gradient(rgba(58,20,0,0.65),rgba(58,20,0,0.75)), url('images/mandir-hero.png') center/cover fixed; overflow:hidden; }
+    .hero::before { content:''; position:absolute; inset:0; background:radial-gradient(circle at 50% 30%, rgba(255,215,0,0.25), transparent 60%); pointer-events:none; }
+    .hero-content { position:relative; z-index:2; padding:30px 20px; max-width:950px; }
+    .hero h1 { font-size:clamp(2rem,5vw,4rem); font-weight:700; text-shadow:3px 3px 15px rgba(0,0,0,0.7); margin-bottom:10px; animation:fadeDown 1.2s ease; }
+    .hero h2 { font-size:clamp(1.3rem,3vw,2rem); color:var(--gold); margin-bottom:20px; animation:fadeDown 1.5s ease; }
+    .hero .guru-line { font-size:clamp(1rem,2.2vw,1.4rem); color:#ffe9c4; margin-bottom:20px; font-weight:500; animation:fadeUp 1.6s ease; text-shadow:1px 1px 8px rgba(0,0,0,0.5); }
+    .hero .guru-line strong { color:var(--gold); font-weight:700; }
+    .hero p.tagline { font-size:clamp(1rem,2.2vw,1.4rem); font-style:italic; color:#ffe9c4; margin-bottom:15px; animation:fadeUp 1.8s ease; }
+    .hero p.intro { font-size:clamp(0.95rem,1.8vw,1.15rem); margin-bottom:35px; animation:fadeUp 2s ease; }
+    @keyframes fadeDown { from{opacity:0;transform:translateY(-30px);} to{opacity:1;transform:translateY(0);} }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(30px);} to{opacity:1;transform:translateY(0);} }
+    .hero-btns { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+    .btn { display:inline-flex; align-items:center; gap:8px; padding:14px 32px; border-radius:40px; font-size:1.05rem; font-weight:600; cursor:pointer; border:none; transition:all 0.3s ease; font-family:inherit; }
+    .btn-primary { background:linear-gradient(135deg,var(--saffron),var(--gold)); color:#fff; box-shadow:0 6px 20px rgba(255,153,51,0.5); }
+    .btn-primary:hover { transform:translateY(-4px) scale(1.03); box-shadow:0 10px 30px rgba(255,153,51,0.7); }
+    .btn-outline { background:transparent; color:#fff; border:2px solid var(--gold); }
+    .btn-outline:hover { background:var(--gold); color:var(--maroon); transform:translateY(-4px); }
+
+    .diya { position:absolute; bottom:40px; font-size:2.5rem; animation:float 4s ease-in-out infinite; }
+    .diya.left { left:8%; animation-delay:0.5s; }
+    .diya.right { right:8%; animation-delay:1.5s; }
+    @keyframes float { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-20px); } }
+
+    .sec-title { text-align:center; font-size:clamp(1.6rem,3.5vw,2.5rem); color:var(--maroon); margin-bottom:15px; font-family:'Tiro Devanagari Hindi',serif; }
+    .sec-sub { text-align:center; color:#6b5540; font-size:1.05rem; max-width:750px; margin:0 auto 50px; font-style:italic; }
+    .sec-divider { width:80px; height:4px; margin:0 auto 20px; background:linear-gradient(90deg,var(--saffron),var(--gold)); border-radius:10px; }
+
+    .about { background:#fff; }
+    .about-text { max-width:900px; margin:0 auto; text-align:center; font-size:1.08rem; color:#4a3826; }
+    .about-text p { margin-bottom:18px; }
+
+    .guru-section { background:linear-gradient(135deg,#FFF8E7,#ffe9c4); padding:70px 20px; }
+    .guru-photo-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:35px; max-width:1000px; margin:0 auto; }
+    .guru-photo-card { background:#fff; border-radius:25px; padding:30px 25px 35px; text-align:center; box-shadow:0 10px 35px rgba(128,0,0,0.15); border-top:6px solid var(--saffron); transition:transform 0.3s,box-shadow 0.3s; }
+    .guru-photo-card:hover { transform:translateY(-10px); box-shadow:0 20px 50px rgba(128,0,0,0.25); }
+    .guru-photo-img { width:190px; height:190px; margin:0 auto 20px; border-radius:50%; overflow:hidden; border:6px solid var(--gold); box-shadow:0 8px 25px rgba(255,153,51,0.4); background:#FFF8E7; }
+    .guru-photo-img img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s; }
+    .guru-photo-card:hover .guru-photo-img img { transform:scale(1.08); }
+    .guru-photo-card h3 { color:var(--maroon); font-size:1.35rem; margin-bottom:8px; font-family:'Tiro Devanagari Hindi',serif; }
+    .guru-photo-card .role { color:var(--saffron); font-weight:700; font-size:1.05rem; margin-bottom:12px; }
+    .guru-photo-card p { color:#5a4632; font-size:0.98rem; line-height:1.7; }
+    .guru-photo-card .quote { font-style:italic; color:var(--maroon); margin-top:15px; padding-top:15px; border-top:2px dashed #ffe9c4; font-size:0.95rem; }
+    .guru-box-note { background:#fff; border-radius:20px; padding:25px 30px; max-width:750px; margin:40px auto 0; border-left:6px solid var(--saffron); box-shadow:0 8px 25px rgba(255,153,51,0.15); text-align:center; font-style:italic; color:#4a3826; font-size:1.05rem; }
+
+    .management-section { background:linear-gradient(135deg,#fff,#FFF8E7); padding:70px 20px; }
+    .management-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:35px; max-width:1000px; margin:0 auto; justify-items:center; }
+    .management-card { background:#fff; border-radius:25px; padding:35px 30px 40px; text-align:center; box-shadow:0 12px 40px rgba(128,0,0,0.18); border-top:6px solid var(--maroon); transition:transform 0.3s,box-shadow 0.3s; max-width:380px; width:100%; }
+    .management-card:hover { transform:translateY(-10px); box-shadow:0 22px 55px rgba(128,0,0,0.28); }
+    .management-img { width:190px; height:190px; margin:0 auto 22px; border-radius:50%; overflow:hidden; border:6px solid var(--maroon); box-shadow:0 10px 30px rgba(128,0,0,0.35); background:#FFF8E7; }
+    .management-img img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s; }
+    .management-card:hover .management-img img { transform:scale(1.08); }
+    .management-card h3 { color:var(--maroon); font-size:1.5rem; margin-bottom:8px; font-family:'Tiro Devanagari Hindi',serif; }
+    .management-card .role { color:#fff; background:linear-gradient(135deg,var(--saffron),var(--gold)); display:inline-block; padding:5px 20px; border-radius:20px; font-weight:700; font-size:1rem; margin-bottom:16px; box-shadow:0 4px 12px rgba(255,153,51,0.4); }
+    .management-card p { color:#5a4632; font-size:1rem; line-height:1.7; }
+    .management-card .quote { font-style:italic; color:var(--maroon); margin-top:18px; padding-top:15px; border-top:2px dashed #ffe9c4; font-size:0.98rem; font-weight:500; }
+
+    .darshan { background:linear-gradient(135deg,#FFF8E7,#ffe9c4); }
+    .quote-box { text-align:center; font-size:1.3rem; font-style:italic; color:var(--maroon); margin-bottom:35px; padding:20px; border-left:4px solid var(--saffron); border-right:4px solid var(--saffron); background:rgba(255,255,255,0.5); border-radius:15px; max-width:700px; margin-left:auto; margin-right:auto; }
+    .schedule-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; max-width:1000px; margin:0 auto; }
+    .schedule-card { background:#fff; padding:30px 20px; border-radius:20px; text-align:center; box-shadow:0 6px 25px rgba(128,0,0,0.1); border-top:5px solid var(--saffron); transition:transform 0.3s,box-shadow 0.3s; }
+    .schedule-card:hover { transform:translateY(-8px); box-shadow:0 15px 35px rgba(128,0,0,0.2); }
+    .schedule-card .icon { font-size:2.8rem; margin-bottom:12px; }
+    .schedule-card h3 { color:var(--maroon); margin-bottom:8px; font-size:1.2rem; }
+    .schedule-card p { color:#6b5540; }
+    .blessing { text-align:center; margin-top:45px; font-size:1.15rem; color:var(--maroon); font-weight:500; font-style:italic; }
+
+    .events { background:#fff; }
+    .event-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
+    .event-card { background:linear-gradient(145deg,#FFF8E7,#fff); border-radius:20px; padding:30px 25px; border:2px solid #ffe9c4; box-shadow:0 6px 20px rgba(255,153,51,0.15); transition:all 0.3s; position:relative; overflow:hidden; }
+    .event-card::before { content:''; position:absolute; top:0; left:0; width:100%; height:5px; background:linear-gradient(90deg,var(--saffron),var(--gold)); }
+    .event-card:hover { transform:translateY(-8px) scale(1.02); box-shadow:0 15px 40px rgba(255,153,51,0.3); }
+    .event-card .ev-icon { font-size:2.5rem; margin-bottom:12px; }
+    .event-card h3 { color:var(--maroon); margin-bottom:10px; font-size:1.2rem; }
+    .event-card p { color:#5a4632; font-size:0.98rem; }
+    .event-card .permanent-badge { display:inline-block; background:linear-gradient(135deg,var(--saffron),var(--gold)); color:#fff; padding:4px 14px; border-radius:20px; font-size:0.8rem; font-weight:700; margin-bottom:10px; letter-spacing:0.5px; }
+    .event-card .event-img { width:100%; height:160px; object-fit:cover; border-radius:12px; margin-bottom:15px; border:2px solid #ffe9c4; }
+    .center-btn { text-align:center; margin-top:50px; }
+
+    .gallery { background:linear-gradient(135deg,#FFF8E7,#ffe9c4); }
+    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
+    .gallery-item { position:relative; overflow:hidden; border-radius:15px; cursor:pointer; height:230px; box-shadow:0 6px 20px rgba(128,0,0,0.15); }
+    .gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; }
+    .gallery-item:hover img { transform:scale(1.12); }
+    .gallery-item::after { content:'🔍'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(128,0,0,0.6); color:#fff; font-size:2rem; opacity:0; transition:opacity 0.3s; }
+    .gallery-item:hover::after { opacity:1; }
+
+    .construction { background:#fff; }
+    .construction-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; max-width:1000px; margin:0 auto; }
+    .construction-text h3 { color:var(--maroon); font-size:1.8rem; margin-bottom:20px; }
+    .construction-text p { font-size:1.05rem; color:#4a3826; margin-bottom:15px; }
+    .construction-img { border-radius:25px; overflow:hidden; box-shadow:0 15px 40px rgba(128,0,0,0.2); }
+    .construction-img img { width:100%; height:300px; object-fit:cover; }
+    .construction-note { background:#FFF8E7; padding:20px; border-radius:15px; border-left:6px solid var(--saffron); margin-top:20px; font-style:italic; }
+
+    .features { background:#fff; }
+    .feature-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:25px; }
+    .feature-card { text-align:center; padding:35px 20px; border-radius:20px; background:linear-gradient(145deg,#FFF8E7,#ffe9c4); box-shadow:0 6px 20px rgba(255,153,51,0.15); transition:transform 0.3s; }
+    .feature-card:hover { transform:translateY(-8px); }
+    .feature-card .f-icon { font-size:3rem; margin-bottom:15px; }
+    .feature-card h3 { color:var(--maroon); margin-bottom:10px; font-size:1.15rem; }
+    .feature-card p { color:#5a4632; font-size:0.95rem; }
+
+    .donation { background:linear-gradient(135deg,var(--maroon),#5a0000); color:#fff; text-align:center; }
+    .donation .sec-title { color:var(--gold); }
+    .donation .sec-sub { color:#ffe9c4; }
+    .donation-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; max-width:900px; margin:0 auto 40px; text-align:left; }
+    .donation-list li { list-style:none; background:rgba(255,255,255,0.08); padding:15px 20px; border-radius:12px; border-left:4px solid var(--gold); transition:background 0.3s; }
+    .donation-list li:hover { background:rgba(255,255,255,0.18); }
+    .pay-box { background:#fff; color:var(--dark); max-width:600px; margin:0 auto; padding:35px 30px; border-radius:25px; box-shadow:0 15px 50px rgba(0,0,0,0.3); }
+    .pay-box h3 { color:var(--maroon); margin-bottom:20px; }
+    .qr-placeholder { width:200px; height:200px; margin:0 auto 20px; background:#FFF8E7; border:3px dashed var(--saffron); border-radius:15px; display:flex; align-items:center; justify-content:center; flex-direction:column; color:var(--maroon); font-size:0.9rem; gap:8px; overflow:hidden; }
+    .qr-placeholder img { width:100%; height:100%; object-fit:contain; }
+    .bank-details { background:#FFF8E7; padding:20px; border-radius:12px; text-align:left; font-family:monospace; font-size:0.95rem; margin-top:20px; line-height:2; }
+    .bank-details strong { color:var(--maroon); }
+    .donate-note { margin-top:25px; font-size:0.9rem; color:#ffe9c4; font-style:italic; }
+
+    .message-sec { background:linear-gradient(135deg,#FFD700,#FF9933); text-align:center; color:var(--maroon); }
+    .message-sec .quote { font-size:clamp(1.1rem,2.5vw,1.6rem); font-style:italic; max-width:850px; margin:0 auto 25px; font-weight:500; }
+    .message-sec .closing { font-size:1.5rem; font-weight:700; }
+    .message-sec .closing span { display:block; margin-top:10px; font-size:1.8rem; }
+
+    .contact { background:#fff; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
+    .contact-info { background:linear-gradient(145deg,#FFF8E7,#ffe9c4); padding:35px 30px; border-radius:20px; box-shadow:0 8px 25px rgba(255,153,51,0.2); }
+    .contact-info h3 { color:var(--maroon); margin-bottom:20px; }
+    .contact-info p { display:flex; align-items:center; gap:12px; margin-bottom:18px; font-size:1.02rem; }
+    .contact-info i { color:var(--saffron); font-size:1.3rem; width:25px; }
+    .contact-form { background:linear-gradient(145deg,#FFF8E7,#ffe9c4); padding:35px 30px; border-radius:20px; box-shadow:0 8px 25px rgba(255,153,51,0.2); }
+    .contact-form input, .contact-form textarea { width:100%; padding:14px 18px; margin-bottom:15px; border:2px solid #ffe9c4; border-radius:12px; font-family:inherit; font-size:1rem; background:#fff; transition:border 0.3s; }
+    .contact-form input:focus, .contact-form textarea:focus { outline:none; border-color:var(--saffron); }
+    .contact-form textarea { resize:vertical; min-height:110px; }
+    .map-embed { margin-top:50px; border-radius:20px; overflow:hidden; box-shadow:0 8px 30px rgba(128,0,0,0.2); }
+    .map-embed iframe { width:100%; height:380px; border:0; display:block; }
+
+    footer { background:#2a1508; color:#ffe9c4; padding:50px 20px 20px; }
+    .footer-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:35px; margin-bottom:35px; }
+    .footer-col h4 { color:var(--gold); margin-bottom:18px; font-size:1.15rem; font-family:'Tiro Devanagari Hindi',serif; }
+    .footer-col p, .footer-col a { color:#d9c4a8; font-size:0.95rem; display:block; margin-bottom:10px; transition:color 0.3s; }
+    .footer-col a:hover { color:var(--gold); padding-left:5px; }
+    .social-icons { display:flex; gap:12px; margin-top:15px; }
+    .social-icons a { width:40px; height:40px; border-radius:50%; background:rgba(255,215,0,0.15); display:flex; align-items:center; justify-content:center; font-size:1.1rem; color:var(--gold); transition:all 0.3s; }
+    .social-icons a:hover { background:var(--gold); color:var(--maroon); transform:translateY(-5px); }
+    .footer-bottom { border-top:1px solid rgba(255,215,0,0.2); padding-top:20px; text-align:center; font-size:0.9rem; color:#b39a7a; }
+    .developer-credit { color:var(--gold); font-weight:700; font-size:1.05rem; display:block; margin-top:10px; }
+    .dedication { color:#ffe9c4; font-style:italic; margin-top:5px; font-size:0.95rem; }
+
+    .whatsapp-float { position:fixed; bottom:25px; left:25px; z-index:999; width:58px; height:58px; border-radius:50%; background:#25D366; color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.7rem; box-shadow:0 6px 20px rgba(37,211,102,0.5); transition:transform 0.3s; animation:bounce 2s infinite; }
+    .whatsapp-float:hover { transform:scale(1.1); }
+    @keyframes bounce { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-8px); } }
+    .top-btn { position:fixed; bottom:25px; right:25px; z-index:999; width:50px; height:50px; border-radius:50%; background:linear-gradient(135deg,var(--saffron),var(--gold)); color:#fff; border:none; cursor:pointer; font-size:1.3rem; box-shadow:0 6px 20px rgba(255,153,51,0.5); opacity:0; visibility:hidden; transition:all 0.4s; }
+    .top-btn.show { opacity:1; visibility:visible; }
+    .top-btn:hover { transform:translateY(-5px); }
+
+    @media (max-width:900px) { .contact-grid { grid-template-columns:1fr; } .construction-grid { grid-template-columns:1fr; } }
+    @media (max-width:768px) {
+      section { padding:55px 15px; }
+      .nav-links { position:fixed; top:0; right:-100%; width:75%; max-width:320px; height:100vh; background:#FFF8E7; flex-direction:column; padding:80px 30px; gap:20px; box-shadow:-5px 0 25px rgba(0,0,0,0.2); transition:right 0.4s ease; align-items:flex-start; }
+      .nav-links.open { right:0; }
+      .nav-links a { font-size:1.1rem; width:100%; padding:10px 0; border-bottom:1px solid #ffe9c4; }
+      .menu-toggle { display:block; }
+      .btn-donate { font-size:0.9rem; padding:8px 16px; }
+      .hero { min-height:85vh; background-attachment:scroll; }
+      .diya { font-size:1.8rem; }
+      .schedule-grid, .event-grid, .feature-grid, .donation-list { grid-template-columns:1fr; }
+      .gallery-grid { grid-template-columns:repeat(2,1fr); }
+      .gallery-item { height:160px; }
+      .pay-box { padding:25px 18px; }
+      .bank-details { font-size:0.85rem; }
+      .guru-photo-img { width:160px; height:160px; }
+      .management-img { width:160px; height:160px; }
+    }
+    @media (max-width:480px) {
+      .hero h1 { font-size:1.7rem; }
+      .btn { padding:12px 22px; font-size:0.95rem; }
+      .gallery-grid { grid-template-columns:1fr; }
+      .whatsapp-float { width:50px; height:50px; font-size:1.4rem; }
+      .guru-photo-img { width:140px; height:140px; }
+      .management-img { width:140px; height:140px; }
+    }
+    ::-webkit-scrollbar { width:10px; }
+    ::-webkit-scrollbar-track { background:#FFF8E7; }
+    ::-webkit-scrollbar-thumb { background:linear-gradient(var(--saffron),var(--maroon)); border-radius:10px; }
+  </style>
 </head>
 <body>
-
-<a href="#main-content" class="skip-link">मुख्य सामग्री पर जाएँ</a>
 
 <div class="announcement">🪔 श्री कृष्ण जन्माष्टमी पर विशेष पूजा – सभी भक्त सादर आमंत्रित हैं। 🪔</div>
 
 <header>
   <div class="nav-wrap">
-    <a href="#home" class="logo"><i class="fa-solid fa-place-of-worship" aria-hidden="true"></i> श्री रामकृष्ण मंदिर</a>
-    <nav class="nav-links" id="navLinks" aria-label="मुख्य मेनू">
+    <a href="#home" class="logo"><i class="fa-solid fa-place-of-worship"></i> श्री रामकृष्ण मंदिर</a>
+    <nav class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#about">About Temple</a>
       <a href="#darshan">Darshan</a>
@@ -77,18 +237,14 @@
       <a href="#donation">Donation</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="मेनू खोलें" aria-expanded="false" aria-controls="navLinks">
-      <i class="fa-solid fa-bars" aria-hidden="true"></i>
-    </button>
+    <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
     <a href="#donation" class="btn-donate">❤️ DONATE NOW</a>
   </div>
 </header>
 
-<main id="main-content">
-
 <section class="hero" id="home">
-  <div class="diya left" aria-hidden="true">🪔</div>
-  <div class="diya right" aria-hidden="true">🪔</div>
+  <div class="diya left">🪔</div>
+  <div class="diya right">🪔</div>
   <div class="hero-content">
     <h1>श्री रामकृष्ण मंदिर</h1>
     <h2>अबगांव खुर्द, तह. हरदा, जिला हरदा (म.प्र.) 461331</h2>
@@ -120,14 +276,14 @@
     <p class="sec-sub">पूज्य गुरुदेव एवं पुजारी जी के आशीर्वाद से मंदिर में भक्ति, सेवा और संस्कार की परंपरा जीवित है।</p>
     <div class="guru-photo-grid">
       <div class="guru-photo-card" data-aos="zoom-in" data-aos-delay="0">
-        <div class="guru-photo-img"><img src="assets/images/gurudev.jpg" alt="गुरु महाराज अनंत विभूषित श्री रामचंद्र जी महाराज" width="500" height="500" loading="lazy" decoding="async"></div>
+        <div class="guru-photo-img"><img src="images/gurudev.png" alt="गुरु महाराज"></div>
         <h3>गुरु महाराज</h3>
         <p class="role">अनंत विभूषित श्री रामचंद्र जी महाराज</p>
         <p>पूज्य गुरुदेव के आशीर्वाद एवं मार्गदर्शन से मंदिर में धार्मिक एवं आध्यात्मिक गतिविधियाँ संचालित होती हैं।</p>
         <p class="quote">"गुरु कृपा से ही जीवन में सच्चा मार्ग मिलता है।"</p>
       </div>
       <div class="guru-photo-card" data-aos="zoom-in" data-aos-delay="150">
-        <div class="guru-photo-img"><img src="assets/images/pujari.jpg" alt="ओम प्रकाश जी वैष्णव, पुजारी" width="500" height="667" loading="lazy" decoding="async"></div>
+        <div class="guru-photo-img"><img src="images/pujari.png" alt="ओम प्रकाश जी वैष्णव"></div>
         <h3>ओम प्रकाश जी वैष्णव</h3>
         <p class="role">पुजारी एवं कृपा पात्र</p>
         <p>पुजारी जी गुरुदेव के कृपा पात्र हैं और मंदिर की दैनिक पूजा, आरती एवं धार्मिक कार्यों का संचालन करते हैं।</p>
@@ -145,14 +301,14 @@
     <p class="sec-sub">मंदिर के संचालन एवं प्रबंधन का कार्य समर्पित भाव से किया जा रहा है।</p>
     <div class="management-grid">
       <div class="management-card" data-aos="zoom-in" data-aos-delay="0">
-        <div class="management-img"><img src="assets/images/sanchalak.jpg" alt="रिषभ वैष्णव, संचालक" width="425" height="585" loading="lazy" decoding="async"></div>
+        <div class="management-img"><img src="images/sanchalak.png" alt="रिषभ वैष्णव (संचालक)"></div>
         <h3>रिषभ वैष्णव</h3>
         <p class="role">🏛️ संचालक (Management)</p>
         <p>मंदिर के प्रबंधन एवं संचालन का कार्य समर्पित भाव से कर रहे हैं। मंदिर की व्यवस्था, धार्मिक कार्यक्रमों का आयोजन एवं भक्तों की सेवा में सदैव तत्पर।</p>
         <p class="quote">"मंदिर सेवा ही सच्ची सेवा है।"</p>
       </div>
     </div>
-    <div class="guru-box-note maroon-border" data-aos="fade-up" data-aos-delay="150">🙏 "मंदिर के संचालन एवं प्रबंधन में जुड़े सभी सेवकों का हार्दिक आभार।"<br>— श्री रामकृष्ण मंदिर, अबगांव खुर्द</div>
+    <div class="guru-box-note" data-aos="fade-up" data-aos-delay="150" style="border-left-color:var(--maroon);">🙏 "मंदिर के संचालन एवं प्रबंधन में जुड़े सभी सेवकों का हार्दिक आभार।"<br>— श्री रामकृष्ण मंदिर, अबगांव खुर्द</div>
   </div>
 </section>
 
@@ -163,10 +319,10 @@
     <div class="quote-box">"राम राम बोल, मन को शांति मिलेगी।"</div>
     <p class="sec-sub">भगवान श्री रामकृष्ण के चरणों में श्रद्धा और प्रेम अर्पित करें।</p>
     <div class="schedule-grid">
-      <div class="schedule-card" data-aos="zoom-in" data-aos-delay="0"><div class="icon" aria-hidden="true">🌅</div><h3>प्रातः आरती</h3><p>सुबह 6:00 बजे</p></div>
-      <div class="schedule-card" data-aos="zoom-in" data-aos-delay="100"><div class="icon" aria-hidden="true">🌺</div><h3>दैनिक पूजा</h3><p>सुबह 8:00 बजे</p></div>
-      <div class="schedule-card" data-aos="zoom-in" data-aos-delay="200"><div class="icon" aria-hidden="true">🌆</div><h3>संध्या आरती</h3><p>शाम 7:00 बजे</p></div>
-      <div class="schedule-card" data-aos="zoom-in" data-aos-delay="300"><div class="icon" aria-hidden="true">🎵</div><h3>भजन एवं कीर्तन</h3><p>शाम 8:00 बजे</p></div>
+      <div class="schedule-card" data-aos="zoom-in" data-aos-delay="0"><div class="icon">🌅</div><h3>प्रातः आरती</h3><p>सुबह 6:00 बजे</p></div>
+      <div class="schedule-card" data-aos="zoom-in" data-aos-delay="100"><div class="icon">🌺</div><h3>दैनिक पूजा</h3><p>सुबह 8:00 बजे</p></div>
+      <div class="schedule-card" data-aos="zoom-in" data-aos-delay="200"><div class="icon">🌆</div><h3>संध्या आरती</h3><p>शाम 7:00 बजे</p></div>
+      <div class="schedule-card" data-aos="zoom-in" data-aos-delay="300"><div class="icon">🎵</div><h3>भजन एवं कीर्तन</h3><p>शाम 8:00 बजे</p></div>
     </div>
     <p class="blessing">"हे रामकृष्ण, सभी भक्तों के जीवन में सुख, शांति, समृद्धि और सद्बुद्धि प्रदान करें।"</p>
   </div>
@@ -180,50 +336,50 @@
     <div class="event-grid">
       <div class="event-card" data-aos="fade-up" data-aos-delay="0">
         <span class="permanent-badge">✨ स्थायी अंक</span>
-        <img class="event-img" src="assets/images/annakut.jpg" alt="56 प्रकार भोग अन्नकूट" width="800" height="436" loading="lazy" decoding="async">
-        <div class="ev-icon" aria-hidden="true">🍛</div>
+        <img class="event-img" src="images/annakut.png" alt="56 प्रकार भोग अन्नकूट">
+        <div class="ev-icon">🍛</div>
         <h3>56 प्रकार भोग अन्नकूट</h3>
         <p>भगवान श्री रामकृष्ण को <strong>56 प्रकार के भोग</strong> का अन्नकूट अर्पित किया जाता है। यह विशेष आयोजन प्रत्येक वर्ष <strong>दीपावली एवं अन्नकूट पर्व</strong> पर किया जाता है।</p>
       </div>
       <div class="event-card" data-aos="fade-up" data-aos-delay="100">
         <span class="permanent-badge">✨ स्थायी अंक</span>
-        <img class="event-img" src="assets/images/ekadashi.jpg" alt="एकादशी विशेष भंडारा" width="800" height="436" loading="lazy" decoding="async">
-        <div class="ev-icon" aria-hidden="true">🌙</div>
+        <img class="event-img" src="images/ekadashi.png" alt="एकादशी विशेष भंडारा">
+        <div class="ev-icon">🌙</div>
         <h3>एकादशी विशेष भंडारा</h3>
         <p>प्रत्येक माह की <strong>शुक्ल एवं कृष्ण पक्ष की एकादशी</strong> को विशेष भंडारे का आयोजन किया जाता है।</p>
       </div>
       <div class="event-card" data-aos="fade-up" data-aos-delay="200">
         <span class="permanent-badge">✨ नित्य</span>
-        <img class="event-img" src="assets/images/aarti.jpg" alt="दैनिक संध्या आरती" width="800" height="436" loading="lazy" decoding="async">
-        <div class="ev-icon" aria-hidden="true">🪔</div>
+        <img class="event-img" src="images/aarti.png" alt="दैनिक संध्या आरती">
+        <div class="ev-icon">🪔</div>
         <h3>दैनिक संध्या आरती</h3>
         <p>सभी भक्त सादर आमंत्रित हैं।<br>समय: प्रतिदिन शाम 7:00 बजे</p>
       </div>
       <div class="event-card" data-aos="fade-up" data-aos-delay="300">
         <span class="permanent-badge">✨ वार्षिक</span>
-        <img class="event-img" src="assets/images/janmashtami.jpg" alt="जन्माष्टमी" width="800" height="1067" loading="lazy" decoding="async">
-        <div class="ev-icon" aria-hidden="true">🌸</div>
+        <img class="event-img" src="images/janmashtami.png" alt="जन्माष्टमी">
+        <div class="ev-icon">🌸</div>
         <h3>श्री रामकृष्ण जन्माष्टमी</h3>
         <p>विशेष पूजा • भजन • कीर्तन • प्रसाद<br>तिथि: भाद्रपद कृष्ण अष्टमी</p>
       </div>
       <div class="event-card" data-aos="fade-up" data-aos-delay="400">
         <span class="permanent-badge">✨ वार्षिक</span>
-        <img class="event-img" src="assets/images/ramnavami.jpg" alt="रामनवमी" width="800" height="1067" loading="lazy" decoding="async">
-        <div class="ev-icon" aria-hidden="true">🌺</div>
+        <img class="event-img" src="images/ramnavami.png" alt="रामनवमी">
+        <div class="ev-icon">🌺</div>
         <h3>रामनवमी</h3>
         <p>विशेष पूजा एवं धार्मिक आयोजन<br>तिथि: चैत्र शुक्ल नवमी</p>
       </div>
       <div class="event-card" data-aos="fade-up" data-aos-delay="500">
         <span class="permanent-badge">✨ वार्षिक</span>
-        <img class="event-img" src="assets/images/dolgyaras.jpg" alt="दोल ग्यारस" width="800" height="1778" loading="lazy" decoding="async">
-        <div class="ev-icon" aria-hidden="true">🌿</div>
+        <img class="event-img" src="images/dolgyaras.png" alt="दोल ग्यारस">
+        <div class="ev-icon">🌿</div>
         <h3>दोल ग्यारस (देवउठनी एकादशी)</h3>
         <p>कार्तिक शुक्ल एकादशी को विशेष पूजा, भजन एवं भंडारा।</p>
       </div>
       <div class="event-card" data-aos="fade-up" data-aos-delay="600">
         <span class="permanent-badge">✨ नियमित</span>
-        <img class="event-img" src="assets/images/bhajan.jpg" alt="भजन संध्या" width="800" height="1067" loading="lazy" decoding="async">
-        <div class="ev-icon" aria-hidden="true">🎵</div>
+        <img class="event-img" src="images/bhajan.png" alt="भजन संध्या">
+        <div class="ev-icon">🎵</div>
         <h3>भजन संध्या एवं कीर्तन</h3>
         <p>भक्ति संगीत एवं सामूहिक संकीर्तन</p>
       </div>
@@ -242,7 +398,7 @@
         <p>अबगांव खुर्द स्थित श्री रामकृष्ण मंदिर का पुराना स्वरूप अब जीर्ण-शीर्ण हो चुका था। भक्तों के सहयोग से इसका निर्माण कार्य प्रारंभ किया गया है।</p>
         <div class="construction-note">🙏 "जो श्रम और श्रद्धा से बनता है, वही सच्चा मंदिर है।"</div>
       </div>
-      <div class="construction-img"><img src="assets/images/old-mandir.jpg" alt="पुराने मंदिर का निर्माण कार्य" width="1200" height="900" loading="lazy" decoding="async"></div>
+      <div class="construction-img"><img src="images/old-mandir.png" alt="पुराने मंदिर का निर्माण कार्य"></div>
     </div>
   </div>
 </section>
@@ -253,14 +409,14 @@
     <h2 class="sec-title">📸 मंदिर की झलकियाँ</h2>
     <p class="sec-sub">मंदिर के फोटो, आरती, पूजा, भंडारा, धार्मिक कार्यक्रम और उत्सवों की तस्वीरें।</p>
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="assets/images/gallery1.jpg" alt="मंदिर" width="900" height="1200" loading="lazy" decoding="async"></div>
-      <div class="gallery-item"><img src="assets/images/gallery2.jpg" alt="आरती" width="900" height="1200" loading="lazy" decoding="async"></div>
-      <div class="gallery-item"><img src="assets/images/gallery3.jpg" alt="दीप" width="900" height="2000" loading="lazy" decoding="async"></div>
-      <div class="gallery-item"><img src="assets/images/gallery4.jpg" alt="भजन" width="900" height="1200" loading="lazy" decoding="async"></div>
-      <div class="gallery-item"><img src="assets/images/gallery5.jpg" alt="पूजा" width="900" height="2000" loading="lazy" decoding="async"></div>
-      <div class="gallery-item"><img src="assets/images/gallery6.jpg" alt="उत्सव" width="900" height="1200" loading="lazy" decoding="async"></div>
-      <div class="gallery-item"><img src="assets/images/gallery7.jpg" alt="मंदिर परिसर" width="900" height="1200" loading="lazy" decoding="async"></div>
-      <div class="gallery-item"><img src="assets/images/gallery8.jpg" alt="भक्त" width="900" height="1200" loading="lazy" decoding="async"></div>
+      <div class="gallery-item"><img src="images/gallery1.png" alt="मंदिर"></div>
+      <div class="gallery-item"><img src="images/gallery2.png" alt="आरती"></div>
+      <div class="gallery-item"><img src="images/gallery3.png" alt="दीप"></div>
+      <div class="gallery-item"><img src="images/gallery4.png" alt="भजन"></div>
+      <div class="gallery-item"><img src="images/gallery5.png" alt="पूजा"></div>
+      <div class="gallery-item"><img src="images/gallery6.png" alt="उत्सव"></div>
+      <div class="gallery-item"><img src="images/gallery7.png" alt="मंदिर परिसर"></div>
+      <div class="gallery-item"><img src="images/gallery8.png" alt="भक्त"></div>
     </div>
   </div>
 </section>
@@ -270,18 +426,18 @@
     <div class="sec-divider"></div>
     <h2 class="sec-title">🌿 भक्ति • सेवा • संस्कार</h2>
     <div class="feature-grid">
-      <div class="feature-card" data-aos="zoom-in"><div class="f-icon" aria-hidden="true">🛕</div><h3>पवित्र दर्शन</h3><p>भगवान श्री रामकृष्ण के दर्शन का सौभाग्य।</p></div>
-      <div class="feature-card" data-aos="zoom-in" data-aos-delay="100"><div class="f-icon" aria-hidden="true">🪔</div><h3>नियमित पूजा एवं आरती</h3><p>प्रतिदिन धार्मिक विधि-विधान के साथ पूजा एवं आरती।</p></div>
-      <div class="feature-card" data-aos="zoom-in" data-aos-delay="200"><div class="f-icon" aria-hidden="true">🎵</div><h3>भजन एवं कीर्तन</h3><p>भक्तिमय वातावरण में सामूहिक भजन और कीर्तन।</p></div>
-      <div class="feature-card" data-aos="zoom-in" data-aos-delay="300"><div class="f-icon" aria-hidden="true">🍚</div><h3>प्रसाद एवं भंडारा</h3><p>विशेष अवसरों पर भक्तों के लिए प्रसाद एवं भंडारे की व्यवस्था।</p></div>
-      <div class="feature-card" data-aos="zoom-in" data-aos-delay="400"><div class="f-icon" aria-hidden="true">🤝</div><h3>सेवा और सहयोग</h3><p>भक्तों के सहयोग से मंदिर एवं धार्मिक गतिविधियों का संचालन।</p></div>
+      <div class="feature-card" data-aos="zoom-in"><div class="f-icon">🛕</div><h3>पवित्र दर्शन</h3><p>भगवान श्री रामकृष्ण के दर्शन का सौभाग्य।</p></div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="100"><div class="f-icon">🪔</div><h3>नियमित पूजा एवं आरती</h3><p>प्रतिदिन धार्मिक विधि-विधान के साथ पूजा एवं आरती।</p></div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="200"><div class="f-icon">🎵</div><h3>भजन एवं कीर्तन</h3><p>भक्तिमय वातावरण में सामूहिक भजन और कीर्तन।</p></div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="300"><div class="f-icon">🍚</div><h3>प्रसाद एवं भंडारा</h3><p>विशेष अवसरों पर भक्तों के लिए प्रसाद एवं भंडारे की व्यवस्था।</p></div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="400"><div class="f-icon">🤝</div><h3>सेवा और सहयोग</h3><p>भक्तों के सहयोग से मंदिर एवं धार्मिक गतिविधियों का संचालन।</p></div>
     </div>
   </div>
 </section>
 
 <section class="donation" id="donation">
   <div class="container" data-aos="fade-up">
-    <div class="sec-divider gold-saffron"></div>
+    <div class="sec-divider" style="background:linear-gradient(90deg,#FFD700,#FF9933);"></div>
     <h2 class="sec-title">❤️ मंदिर सेवा में आपका सहयोग</h2>
     <p class="sec-sub">आपका छोटा सा सहयोग मंदिर की बड़ी सेवा में योगदान बन सकता है।</p>
     <h3 style="color:#FFD700; margin-bottom:20px;">🙏 आपका दान इन कार्यों में उपयोग हो सकता है:</h3>
@@ -294,15 +450,9 @@
       <li>🧹 मंदिर की स्वच्छता एवं व्यवस्था</li>
     </ul>
     <div class="pay-box">
-      <h3>📱 Scan &amp; Pay – UPI</h3>
-      <div class="qr-placeholder"><img src="assets/images/donation-qr.png" alt="UPI QR कोड" width="451" height="472" loading="lazy" decoding="async"></div>
+      <h3>📱 Scan & Pay – UPI</h3>
+      <div class="qr-placeholder"><img src="images/donation-qr.png" alt="UPI QR Code"></div>
       <p style="color:#800000; font-weight:600;">UPI ID: ramkrishnamandir@upi</p>
-      <!--
-        ⚠️ महत्वपूर्ण: नीचे दिए गए बैंक विवरण और UPI ID की एक बार फिर से
-        अच्छी तरह पुष्टि (verify) कर लें कि ये मंदिर के सही एवं मौजूदा
-        खाते के हैं, इससे पहले कि साइट लाइव करें — दान से जुड़ी जानकारी
-        में कोई भी गलती भक्तों का पैसा गलत जगह भेज सकती है।
-      -->
       <div class="bank-details">
         <strong>Account Name:</strong> Shri Ramkrishna Mandir<br>
         <strong>A/C No.:</strong> 12345678901<br>
@@ -317,7 +467,7 @@
 
 <section class="message-sec">
   <div class="container" data-aos="zoom-in">
-    <div class="sec-divider maroon"></div>
+    <div class="sec-divider" style="background:#800000;"></div>
     <h2 class="sec-title" style="color:#800000;">🌸 भक्तों के लिए संदेश</h2>
     <p class="quote">"मन में श्रद्धा रखिए, रामकृष्ण का नाम लीजिए और जीवन में प्रेम, शांति एवं सकारात्मकता का अनुभव कीजिए।"</p>
     <p class="closing">राम राम 🙏<span>जय श्री रामकृष्ण 🦚</span></p>
@@ -332,56 +482,31 @@
     <div class="contact-grid">
       <div class="contact-info">
         <h3>संपर्क जानकारी</h3>
-        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> अबगांव खुर्द, तह. हरदा, जिला हरदा (म.प्र.) 461331</p>
-        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+919753491127" class="phone-link">+91 9753491127</a></p>
-        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:ramkrishnamandir.abgaon@gmail.com">ramkrishnamandir.abgaon@gmail.com</a></p>
-        <p><i class="fa-solid fa-clock" aria-hidden="true"></i> प्रातः 6:00 – रात्रि 9:00</p>
-        <p><i class="fa-solid fa-user-tie" aria-hidden="true"></i> <strong>पुजारी:</strong> ओम प्रकाश जी वैष्णव</p>
-        <p><i class="fa-solid fa-user-gear" aria-hidden="true"></i> <strong>संचालक:</strong> रिषभ वैष्णव</p>
-        <div class="contact-actions">
-          <a href="tel:+919753491127" class="btn btn-primary btn-sm">📞 Contact Us</a>
-          <a href="https://maps.google.com/?q=Abgaon+Khurd+Harda+Madhya+Pradesh+461331" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm btn-outline-maroon">📍 Get Directions</a>
+        <p><i class="fa-solid fa-location-dot"></i> अबगांव खुर्द, तह. हरदा, जिला हरदा (म.प्र.) 461331</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+919753491127" style="color:var(--maroon); font-weight:600;">+91 9753491127</a></p>
+        <p><i class="fa-solid fa-envelope"></i> ramkrishnamandir.abgaon@gmail.com</p>
+        <p><i class="fa-solid fa-clock"></i> प्रातः 6:00 – रात्रि 9:00</p>
+        <p><i class="fa-solid fa-user-tie"></i> <strong>पुजारी:</strong> ओम प्रकाश जी वैष्णव</p>
+        <p><i class="fa-solid fa-user-gear"></i> <strong>संचालक:</strong> रिषभ वैष्णव</p>
+        <div style="margin-top:25px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="tel:+919753491127" class="btn btn-primary" style="padding:10px 20px; font-size:0.95rem;">📞 Contact Us</a>
+          <a href="https://maps.google.com/?q=Abgaon+Khurd+Harda+Madhya+Pradesh+461331" target="_blank" class="btn btn-outline" style="padding:10px 20px; font-size:0.95rem; color:#800000; border-color:#800000;">📍 Get Directions</a>
         </div>
       </div>
-
-      <!--
-        फॉर्म अब असल में काम करता है (FormSubmit.co के ज़रिए, बिना बैकएंड के)।
-        पहली सबमिशन पर मंदिर की ईमेल पर एक confirmation link आएगा —
-        उसे क्लिक करके activate करें। विस्तार से README.md में देखें।
-      -->
-      <form class="contact-form" id="contactForm"
-            action="https://formsubmit.co/ramkrishnamandir.abgaon@gmail.com" method="POST">
-        <h3>संदेश भेजें</h3>
-
-        <label for="cf-name" class="visually-hidden">आपका नाम</label>
-        <input type="text" id="cf-name" name="name" placeholder="आपका नाम" required>
-
-        <label for="cf-mobile" class="visually-hidden">मोबाइल नंबर</label>
-        <input type="tel" id="cf-mobile" name="mobile" placeholder="मोबाइल नंबर (10 अंक)" pattern="[6-9][0-9]{9}" required>
-
-        <label for="cf-email" class="visually-hidden">ईमेल (वैकल्पिक)</label>
-        <input type="email" id="cf-email" name="email" placeholder="ईमेल (वैकल्पिक)">
-
-        <label for="cf-message" class="visually-hidden">आपका संदेश</label>
-        <textarea id="cf-message" name="message" placeholder="आपका संदेश..." required></textarea>
-
-        <!-- Honeypot — bots भरते हैं, इंसान नहीं देख पाते -->
-        <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="hidden" name="_subject" value="नया संदेश — श्री रामकृष्ण मंदिर वेबसाइट">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="true">
-
-        <button type="submit" class="btn btn-primary">संदेश भेजें</button>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('🙏 धन्यवाद! आपका संदेश भेज दिया गया है।'); this.reset();">
+        <h3 style="color:#800000; margin-bottom:18px;">संदेश भेजें</h3>
+        <input type="text" placeholder="आपका नाम" required>
+        <input type="tel" placeholder="मोबाइल नंबर" required>
+        <input type="email" placeholder="ईमेल (वैकल्पिक)">
+        <textarea placeholder="आपका संदेश..." required></textarea>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">संदेश भेजें</button>
       </form>
     </div>
     <div class="map-embed">
-      <iframe src="https://www.google.com/maps?q=Abgaon+Khurd,+Harda,+Madhya+Pradesh+461331&output=embed" loading="lazy" title="मंदिर का स्थान — Google Maps"></iframe>
+      <iframe src="https://www.google.com/maps?q=Abgaon+Khurd,+Harda,+Madhya+Pradesh+461331&output=embed" loading="lazy" title="Temple Location"></iframe>
     </div>
   </div>
 </section>
-
-</main>
 
 <footer>
   <div class="footer-grid">
@@ -391,12 +516,11 @@
       <p>आस्था, भक्ति और शांति का पवित्र केंद्र।</p>
       <p><strong>पुजारी:</strong> ओम प्रकाश जी वैष्णव</p>
       <p><strong>संचालक:</strong> रिषभ वैष्णव</p>
-      <!-- TODO: नीचे दिए सोशल लिंक अभी placeholder (#) हैं — असली प्रोफ़ाइल लिंक से बदलें -->
       <div class="social-icons">
-        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-        <a href="https://wa.me/919753491127" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
     <div class="footer-col">
@@ -416,8 +540,8 @@
     </div>
     <div class="footer-col">
       <h4>संपर्क</h4>
-      <p>📞 <a href="tel:+919753491127" class="phone-link">+91 9753491127</a></p>
-      <p>📧 <a href="mailto:ramkrishnamandir.abgaon@gmail.com">ramkrishnamandir.abgaon@gmail.com</a></p>
+      <p>📞 <a href="tel:+919753491127" style="color:#d9c4a8;">+91 9753491127</a></p>
+      <p>📧 ramkrishnamandir.abgaon@gmail.com</p>
       <p>📍 अबगांव खुर्द, तह. हरदा (म.प्र.) 461331</p>
     </div>
   </div>
@@ -429,10 +553,43 @@
   </div>
 </footer>
 
-<a href="https://wa.me/919753491127" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp पर संपर्क करें"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-<button class="top-btn" id="topBtn" aria-label="ऊपर जाएँ"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+<a href="https://wa.me/919753491127" target="_blank" class="whatsapp-float" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="top-btn" id="topBtn" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-<script src="assets/js/script.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 900, once: true, offset: 80 });
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    const icon = menuToggle.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-xmark');
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      const icon = menuToggle.querySelector('i');
+      icon.classList.add('fa-bars');
+      icon.classList.remove('fa-xmark');
+    });
+  });
+  const topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) topBtn.classList.add('show');
+    else topBtn.classList.remove('show');
+  });
+  topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
 </body>
 </html>
